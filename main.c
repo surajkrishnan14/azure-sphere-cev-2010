@@ -54,7 +54,7 @@ int main(void)
         return ExitCode_Main_Led;
     }
 
-    const struct timespec sleepTime = {.tv_sec = 1, .tv_nsec = 0};
+    const struct timespec sleepTime = {.tv_sec = 3, .tv_nsec = 0};
     while (true) {
         GPIO_SetValue(fd, GPIO_Value_Low);
         nanosleep(&sleepTime, NULL);
